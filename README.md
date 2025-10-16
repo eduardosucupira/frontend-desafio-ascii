@@ -1,4 +1,4 @@
-# 🎬 ASCIIvideo - Demon Slayer
+# 🎬 [ASCIIvideo - Demon Slayer](https://eduardosucupira.github.io/frontend-desafio-ascii/)
 
 ## 🧑‍💻 Autor
 **Nome:** Eduardo Augusto Araujo Sucupira  
@@ -36,4 +36,4 @@ A página apresenta:
 ## ⚙️ Como Executar o Projeto
 1. Baixe ou clone este repositório:
    ```bash
-   git clone https://github.com/seuusuario/ascii-video.git
+   git clone https://github.com/eduardosucupira/frontend-desafio-ascii.git
