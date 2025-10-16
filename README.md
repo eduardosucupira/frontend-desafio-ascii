@@ -1,4 +1,4 @@
-# 🎬 <a href="https://eduardosucupira.github.io/ascii-video/" target="_blank">[ASCIIvideo - Demon Slayer]</a>
+# 🎬 [ASCIIvideo - Demon Slayer](https://eduardosucupira.github.io/frontend-desafio-ascii/)
 
 ## 🧑‍💻 Autor
 **Nome:** Eduardo Augusto Araujo Sucupira  
@@ -37,4 +37,3 @@ A página apresenta:
 1. Baixe ou clone este repositório:
    ```bash
    git clone https://github.com/eduardosucupira/frontend-desafio-ascii.git
-
