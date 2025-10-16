@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    /*remove a margem padrão*/
+    padding: 0;
+    /*remove o padding padrão*/
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    /*fonte do google fonts*/
+    text-decoration: none;
+    /*traço na parte de baixo*/
+    list-style: none;
+    /*bolinha que fica na <li>*/
+}
+
+body {
+    background-color: rgb(1, 0, 10);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Remova overflow: hidden; */
+    min-height: 200vh; /* aumenta a altura da página */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /*alinha os itens no centro*/
+    justify-content: space-between;
+    /*espaço entre os itens*/
+    padding: 25px 48px;
+    /*espaçamento*/
+}
+
+header .logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    /*alinha os itens no centro*/
+    gap: 40px;
+    /*espaçamento entre os itens*/
+}
+
+.navigation ul li a {
+    color: #fff;
+    /*cor do texto*/
+    font-size: 18px;
+    /*tamanho da fonte*/
+    padding-bottom: 5px;
+    /*distancia dentro do botão (no caso o bottom)*/
+    border-bottom: 2px solid transparent;
+    /*borda em baixo das letras*/
+    transition: border-color .10s;
+}
+
+.navigation ul li a:hover {
+    /*quando passar o mouse em cima faz animação*/
+    border-color: #fff;
+    /*borda inferior branca ao passar o mouse*/
+}
+
+.navigation .search {
+    width: 22px;
+    /*tamanho do icone de busca*/
+    cursor: pointer;
+    /*muda o cursor quando passa em cima*/
+    filter: invert(1);
+}
+
+.navigation .user {
+    width: 45px;
+    /*tamanho do icone de usuário*/
+    cursor: pointer;
+    /*muda o cursor quando passa em cima*/
+}
+
+
+/*main*/
+
+main{
+    display: flex;
+    align-items: center;
+    max-width: 50em; /*equivalente a 800px*/
+    margin-top: 1.5em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+
+main section .logo-anime{
+    width: 18em; /*equivalente a 560px*/
+    margin: 03em 0;
+}
+
+main section .btn-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 35px solid transparent;
+}
+
+.btn-box .btn{
+    padding: 20px 45px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-box .btn:hover{
+    background: #fff;
+    color: #000;
+    transform: scale(1.1); /* aumenta o botão ao passar o mouse */
+}
+
+.btn-box .btn:focus{ /* quando clicar no botão */
+    background: #fff;
+    color: #000;
+}
+
+main section .text{
+    color: #fff;
+    line-height: 22px; /*equivalente a 1.5em*/
+}
+
+.btn-box2{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+    border: #fff solid 2px;
+    padding: 15px 45px;
+    margin-top: 2em;
+    border-radius: 40px;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-box2:hover{
+    transform: scale(1.1); /* aumenta o botão ao passar o mouse */
+}
+
+.btn-box2 .play{
+    width: 30px;
+    filter: invert(1);
+}
+
+.cards {
+    display: flex;
+    flex-flow: row;
+    margin-left: 30em;   /* aumente para mover mais para a direita */
+    margin-top: -1.7em;     /* diminua para subir mais */
+}
+
+.cards .card {
+    height: 200px;
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -150px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; /* Animação ao passar o mouse */
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o card */
+}
+
+.card:hover {
+    transform: translate(30px) rotate(1deg);
+}
+
+.card:hover ~ .card {
+    transform: translate(190px);
+}
+
+.carater {
+    width: 850px;
+    display: flex;
+    left: 110vh;
+    position: absolute;
+    bottom: 0vh;
+    transition: 0.6s;
+    cursor: pointer;
+    
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.parallax {
+    background-image: url('img/para1.jpg'); /* coloque o caminho da sua imagem */
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* necessário para posicionar o botão dentro */
+}
+
+.btn3 {
+    position: absolute;
+    left: 43%;
+    top: 1600px;
+    color: #ffffff;
+    background-color: transparent;
+    border: #ffffff solid 2px;
+    padding: 15px 45px;
+    border-radius: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn3:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.1); /* aumenta o botão ao passar o mouse */
+}
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 1em;
+    }
+
+    .cards {
+        margin-left: 0;
+        justify-content: center;
+        margin-top: 2em;
+        flex-wrap: wrap;
+    }
+    .cards .card {
+        margin: 12px;
+        height: 260px;
+        width: 380px;
+        max-width: 95vw;
+        min-width: 220px;
+        border-radius: 18px;
+    }
+
+    .carater {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 2em auto;
+        display: block;
+    }
+    main section {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 10px;
+            align-items: center;
+    }
+    .navigation ul {
+            flex-direction: row;
+            gap: 15px;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+    }
+    .logo {
+        width: 100px;
+            margin-bottom: 10px;
+    }
+        .navigation {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    .logo-anime {
+        width: 12em;
+            .cards .card {
+                margin: 6px;
+                height: 160px;
+                width: 320px;
+                max-width: 98vw;
+                min-width: 140px;
+                border-radius: 14px;
+                transition: transform 0.3s;
+    }
+    .cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .cards .card {
+        margin: 10px;
+        height: 200px;
+        width: 320px;
+        max-width: 95vw;
+        min-width: 180px;
+        border-radius: 14px;
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.04);
+    }
+    .card:hover ~ .card {
+        transform: none;
+    }
+    .carater {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        min-height: 100vh;
+    }
+    header {
+        flex-direction: column;
+        padding: 10px 5px;
+        gap: 5px;
+            align-items: center;
+    }
+    .navigation ul {
+            flex-direction: row;
+            gap: 8px;
+            font-size: 13px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 8px;
+    }
+    .logo {
+        width: 70px;
+            margin-bottom: 8px;
+    }
+        .navigation {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    main {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 0.5em;
+    }
+    main section {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .logo-anime {
+        width: 8em;
+        margin: 1em 0;
+    }
+    .btn-box .btn {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .btn-box2 {
+        font-size: 14px;
+        padding: 8px 10px;
+        border-radius: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    .cards .card {
+        margin: 6px;
+        height: 120px;
+        width: 200px;
+        max-width: 95vw;
+        min-width: 100px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.04);
+    }
+    .card:hover ~ .card {
+        transform: none;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    .parallax{
+        min-height: 60vh;
+    }
+    .btn3 {
+        font-size: 16px;
+        padding: 8px 10px;
+        border-radius: 20px;
+        top: 1400px;
+        left: 33%;
+    }
+}}
